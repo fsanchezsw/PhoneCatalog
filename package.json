@@ -1,0 +1,29 @@
+{
+  "name": "phone-catalog",
+  "version": "1.0.0",
+  "description": "NodeJS APIREST for basic CRUD of mocked phones and Angular client for see them",
+  "scripts": {
+    "api": "cd phone-catalog-api && node .",
+    "app": "cd phone-catalog-app && ng serve",
+    "install:api": "cd phone-catalog-api && npm install",
+    "install:app": "cd phone-catalog-app && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsanchezsw/PhoneCatalog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "javascript",
+    "angular",
+    "typescript"
+  ],
+  "author": "Francisco Sánchez Rueda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fsanchezsw/PhoneCatalog/issues"
+  },
+  "homepage": "https://github.com/fsanchezsw/PhoneCatalog#readme"
+}
