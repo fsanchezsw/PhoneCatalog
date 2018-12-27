@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config($font-family: 'Roboto, monospace',
+$headline: mat-typography-level(32px, 48px, 700),
+$body-1: mat-typography-level(16px, 24px, 500));
+
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+@include mat-base-typography($custom-typography);
+
+// Override typography for a specific Angular Material components.
+@include mat-checkbox-typography($custom-typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+
+.font-usitee {
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.tappable {
+    cursor: pointer;
+}
+
+$screen-breakpoints-xs : 0;
+$screen-breakpoints-sm : 576px;
+$screen-breakpoints-md : 768px;
+$screen-breakpoints-lg : 992px;
+$screen-breakpoints-xl : 1200px;
+
+.w-400 {
+    max-width: 400px;
+    width: 100%;
+}
+
+.w-100-p {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-in-parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.foreground-wrapper {
+    position: absolute;
+}
+
+.tr-over {
+    cursor: pointer;
+}
+
+.tr-over:hover {
+    background: #2bbab87e;
+}
