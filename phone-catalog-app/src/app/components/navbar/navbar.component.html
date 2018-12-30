@@ -1,0 +1,12 @@
+<header style="border-bottom: 2px solid white;">
+  <img class="logo-icon" src="assets/images/angular.png" height="40px" alt="logo-icon">
+  <span class="logo-text">PHONE CATALOG</span>
+</header>
+<!-- menu -->
+<mat-nav-list style="margin-right: 14px">
+  <mat-list-item style="border-radius: 0 20px 20px 0;" *ngFor="let link of links"
+                  [routerLink]="link.path" routerLinkActive="active-link" (click)="onClickItem(link)">
+      <mat-icon style="padding-right: 15px">{{ link.icon }}</mat-icon>
+      <span>{{ link.name }}</span>
+  </mat-list-item>
+</mat-nav-list>

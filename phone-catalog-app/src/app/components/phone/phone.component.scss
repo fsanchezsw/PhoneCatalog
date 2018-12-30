@@ -1,0 +1,46 @@
+mat-toolbar {
+    background-color: #292929;
+    background-size: cover;
+    height: 64px;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    /* For macOS/iOS Safari */
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+    /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.column-img {
+	padding: 10px;
+}
+
+.column-info {
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 5px 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.span-toolbar {
+    padding-left: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

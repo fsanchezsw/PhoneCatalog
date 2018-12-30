@@ -25,7 +25,7 @@ const phones = [
         color: 'Black',
         price: 249,
         description: 'Atrapa el momento',
-        image: 'https://thumb.pccomponentes.com/w-530-530/articles/16/166822/1386690.jpg',
+        image: 'http://www.latiendaorange.es/recursos/tienda/articulos/sp-5ba20bc6a76ec.jpg',
         size: '146,5 x 72,7 x 7,9',
         weight: '153'
     },

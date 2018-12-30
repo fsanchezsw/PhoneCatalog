@@ -1,1 +1,9 @@
-<app-main></app-main>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav [mode]="mode" [opened]="opened">
+        <app-navbar></app-navbar>
+    </mat-sidenav>
+    <mat-sidenav-content>      
+        <app-phones *ngIf="!getPhone()"></app-phones>
+        <app-phone *ngIf="getPhone()"></app-phone>
+    </mat-sidenav-content>
+</mat-sidenav-container>

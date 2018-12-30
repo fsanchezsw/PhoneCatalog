@@ -1,0 +1,18 @@
+<mat-toolbar class="sticky">
+    <mat-icon style="color: white" class="tappable" (click)="onClickBack()">arrow_back</mat-icon>
+    <span class="span-toolbar">{{phone.model}}</span>
+</mat-toolbar>
+
+<mat-spinner class="spinner" color="accent" *ngIf="!phone"></mat-spinner>   
+
+<div *ngIf="phone" class="columns" style="padding: 20px">
+    <img class="column-img" style="height: 300px" [src]="phone.image"/>
+    <div class="column-info">
+        <p><span>Model: </span>{{phone.model}}</p>
+        <p><span>Color: </span>{{phone.color}}</p>
+        <p><span>Price: </span>{{phone.price}} €</p>
+        <p><span>Description: </span>{{phone.description}}</p>
+        <p><span>Size: </span>{{phone.size}} cm</p>
+        <p><span>Weight: </span>{{phone.weight}} g</p>
+    </div>
+</div>

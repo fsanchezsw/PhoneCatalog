@@ -1,0 +1,39 @@
+<mat-toolbar class="sticky">
+  <span style="padding-left: 10px; color: white">Phones</span>
+</mat-toolbar>
+
+<mat-spinner class="spinner" color="accent" *ngIf="!phones.length"></mat-spinner>
+
+<mat-table *ngIf="phones.length" #table [dataSource]="phones">
+
+  <ng-container cdkColumnDef="model">
+    <mat-header-cell *cdkHeaderCellDef>Model</mat-header-cell>
+    <mat-cell *cdkCellDef="let phone">
+      <p class="text-truncate font-weight-600">{{phone.model}}</p>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container cdkColumnDef="price">
+    <mat-header-cell *cdkHeaderCellDef>Price</mat-header-cell>
+    <mat-cell *cdkCellDef="let phone">
+      <p class="text-truncate">{{phone.price}} €</p>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container cdkColumnDef="color">
+    <mat-header-cell *cdkHeaderCellDef>Color</mat-header-cell>
+    <mat-cell *cdkCellDef="let phone">
+      <p class="text-truncate">{{phone.color}}</p>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container cdkColumnDef="description">
+    <mat-header-cell *cdkHeaderCellDef>Description</mat-header-cell>
+    <mat-cell *cdkCellDef="let phone">
+      <p class="text-truncate">{{phone.description}}</p>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *cdkHeaderRowDef="columnsToDisplay"></mat-header-row>
+  <mat-row *cdkRowDef="let phone; columns: columnsToDisplay" (click)="onClickPhone(phone)"></mat-row>
+</mat-table>
