@@ -6,14 +6,14 @@ Phone catalog app with basic Node APIREST and Angular in Front-end side
 For NodeJS API:
 
 ```sh
-npm install:api
+npm run install:api
 
 ```
 
 For Angular APP:
 
 ```sh
-npm install:app
+npm run install:app
 ```
 
 # Development setup
