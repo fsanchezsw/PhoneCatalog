@@ -3,6 +3,8 @@ Phone catalog app with basic Node APIREST and Angular in Front-end side
 
 # Installation
 
+You need NodeJS, NPM and Angular CLI in order to complete the installation.
+
 For NodeJS API:
 
 ```sh
